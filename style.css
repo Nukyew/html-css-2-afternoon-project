@@ -3,6 +3,21 @@ body {
     margin: 0;
 }
 
+.section-wrapper {
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch; */
+}
+
 .header-wrapper {
     display: flex;
     justify-content: center;
@@ -22,12 +37,49 @@ body {
     box-shadow: 40px 0 30px gray;
 }
 
-.border-wrap {
+/* .border-wrap-section {
+    height: 100vh;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+    padding-left: 20px; */
+/* .border-wrap {
     width: 97.3vw;
     height: 95vh;
     position: fixed;
+    display: flex;
     border: 20px solid #FFE3EA;
     z-index: 0;
+} */
+
+.border-wrap {
+    height: 100vw;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    z-index: 0;
+    justify-content: space-between;
+}
+.border-left {
+    background: #FFE3EA;
+    width: 20px;
+    height: 100vh;
+    display: flex;
+}
+.border-right {
+    background: #FFE3EA;
+    width: 20px;
+    height: 100vh;
+    display: flex;
+}
+.border-bottom {
+    background: #FFE3EA;
+    position: fixed;
+    width: 100vw;
+    height: 20px;
+    display: flex;
+    bottom: 0;
 }
 
 .left-logo {
@@ -92,9 +144,11 @@ body {
 }
 
 .section1 {
+    /* background: green; */
+    background: white;
     width: 100vw;
     height: 800px;
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -158,18 +212,19 @@ body {
 	top: 1px;
 }
 
-/* .design {
+.section2 {
+    background: lightblue;
+    width: 100vw;
+    height: 800px;
     display: flex;
+    align-items: center;
+    z-index: -2;
+    margin-top: 80px;
 }
-.books {
+.section2-wrapper {
+    background: red;
+    width: 100vw;
+    height: 80vh;
     display: flex;
+    transform: translate(0%, -10%)
 }
-.podcast {
-    display: flex;
-}
-.workshops {
-    display: flex;
-}
-.conversations {
-    display: flex;
-} */
